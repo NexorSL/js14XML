@@ -1,0 +1,176 @@
+html
+  font-family: "Helvetica","Arial",sans-serif
+  font-size: 14px
+  font-weight: 400
+  line-height: 20px
+  color: #ebebeb
+  background-color: #2f4051
+[href]
+  text-decoration: none
+  color: #ebebeb
+::selection
+  background: #b3d4fc
+  text-shadow: none
+h1
+  font-size: 22px
+  font-weight: 700
+h3
+  font-weight: 700
+body
+  display: grid
+  grid-template-columns: repeat(9, 1fr)
+header
+  grid-column-start: 1
+  grid-column-end: 10
+  width: 100%
+aside
+  grid-column-start: 1
+  grid-column-end: 2
+  grid-row-start: 2
+  grid-row-end: 3
+main
+  grid-column-start: 2
+  grid-column-end: 10
+footer
+  grid-column-start: 1
+  grid-column-end: 10
+.Header
+  background-color: #df691a
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.04), 0 1px 1px -2px rgba(0,0,0,.2)
+  &-Up
+    display: grid
+    grid-template-columns: 1fr 1fr
+    padding: 20px 45px 40px 22px
+    &-Logo
+      display: flex
+      flex-direction: row
+      &-Burger
+        fill: #FFFFFF
+        margin-right: 30px
+      &-Kino50
+        font-size: 25px
+        font-weight: 770
+    &-Buttons
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      &-Bookmarks
+        fill: #FFFFFF
+      &-Search
+        fill: #FFFFFF
+        margin-left: 20px
+  &-Down
+    margin: 15px 0 0 40px
+    padding-bottom: 20px
+    width: 40%
+    &-Nav
+      @media (max-width: 600px)
+        font-size: 10px
+        margin-left: 130px
+      &-Category
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        &-Li
+          & a:hover
+            border-bottom: 4px solid #FFFFFF
+            padding-bottom: 16px
+aside
+  padding: 16px 15px 16px 10px
+  display: flex
+  flex-direction: column
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2)
+.Aside
+  display: grid
+  grid-gap: 1em
+  line-height: 22px
+  text-decoration: underline
+  margin-bottom: 30px
+.Footer
+  display: grid
+  grid-template-columns: 1fr 1fr
+  padding: 0 40px
+  margin-bottom: 35px
+  margin-top: 20px
+  &-Contact
+    margin: 11px
+  &-Lang
+    display: flex
+    justify-content: flex-end
+    & a
+      margin: 11px
+main
+.Main
+  padding: 30px 30px 15px 30px
+  display: flex
+  flex-direction: column
+  border-bottom: .5px solid rgb(102, 102, 102)
+  &-Sort
+    display: flex
+    margin: 40px 0 5px 0
+    &-Type
+      &-Ul
+        display: flex
+        &-Href
+          padding: 10px
+        @media (max-width: 650px)
+          display: grid
+          grid-template-rows: 50px
+  &-Down
+    &-Items
+      display: flex
+      flex-wrap: wrap
+      & li
+        margin: 10px
+        box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.2), 0 1px 8px 0 rgba(0,0,0,.12)
+      &-Disc
+        background: #4e5d6c
+        margin-top: -2px
+        &-Title
+  &-Nav
+    margin: 40px
+    &-Ul
+      display: flex
+      font-size: 16px
+      justify-content: space-between
+      width: 25%
+      // @media (max-width: 650px)
+      // & li
+      //   margin: 0 15px
+  &-Info
+    line-height: 20px
+    margin: 0 20px 40px 10px
+.Active
+  border-bottom: 2px solid #df691a
+  padding-bottom: 18px
+  font-weight: 600
+  color: #df691a
+.Hover-Items
+    width: 170px
+    background: linear-gradient(to top,rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.6) 70%)
+    pointer-events: none
+    font-weight: bold
+    padding: 15px
+    color: white
+    text-shadow: 0 2px 4px black
+    display: none
+    position: absolute
+.Li-Item:hover .Hover-Items
+  display: block
+.Png
+  width: 20px
+.Dvd
+  width: 80px
+.Title
+  max-width: 180px
+  height: 20px
+  padding: 10px
+.Current
+  color: #757575
+#Layer_1
+  width: 30px
+  margin-top: -7px
+  fill: #FFFFFF
+footer
+  background-color: #424242
+  box-shadow: 2px 4px 10px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2)

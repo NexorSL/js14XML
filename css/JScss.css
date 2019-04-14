@@ -1,0 +1,28 @@
+[id=Main-sec]{
+  display: flex;
+  flex-wrap: wrap;
+}
+.parseImg{
+  width: 200px;
+  height: 200px;
+}
+.article-img{
+  margin: 20px;
+  width: 200px;
+  background-color: #4e5d6c;
+}
+.parImg{
+  background-color: #4e5d6c;
+  margin: 5px;
+  height: 50px;
+}
+.rating-dvd{
+  display: flex;
+  justify-content: space-between;
+  background-color: #4e5d6c;
+  height: 30px;
+}
+.rating-dvd img{
+  width: 100px;
+  height: 30px;
+}
